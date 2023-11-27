@@ -21,6 +21,7 @@ p,li,a{
     letter-spacing: .1rem;
     font-weight: 400;
     color: var(--para-color);
+    line-height: 1.5;
 
 }
 li{
@@ -39,7 +40,7 @@ a{
     --bg-color:#ffffff;
     --heading-color:#000a19;
     --para-color:#504e4d;
-    --h-color:#0a043c;
+    --hero-heading-color:#003b99;
     --white-color:#ffffff;
     --test:#070101;
     --btn-hover-bg-color:#003b99;
@@ -60,8 +61,30 @@ a{
 .grid-two-cols{
     grid-template-columns: repeat(2,1fr);
 }
+.grid-three-cols{
+    grid-template-columns: repeat(3,1fr);
+}
+.grid-four-cols{
+    
+    grid-template-columns: repeat(4,1fr);
+}
 
 /* module /reusable  */
+
+.section-common--title{
+    font-size: 1.4rem;
+    margin: 2rem 0 1rem 0;
+}
+
+.section-common-heading{
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.section-common-subheading{
+    color: var(--heading-color);
+}
 .btn{
     padding: 0.9rem 1.2rem;
     background-color: var(--main-color);
@@ -71,6 +94,23 @@ a{
     -moz-border-radius:0.6rem;
     -ms-border-radius:0.6rem;
     -o-border-radius:0.6rem;
+}
+
+.fa-solid{
+    padding: 1.4rem;
+    background-color:var(--supporting-color);
+    font-size: 2.4rem;
+    border-radius: 50%;
+    color:var(--hero-heading-color);
+    margin-top: 3rem;
+}
+.fa-brands{
+    padding: 1.4rem;
+    background-color:var(--supporting-color);
+    font-size: 2.4rem;
+    border-radius: 50%;
+    color:var(--hero-heading-color);
+    margin-top: 3rem;
 }
 
 /* state */
@@ -135,17 +175,104 @@ main{
         #ebf3fe
     );
     /* height: 100vh; */
+    position: relative;
 }
 
 .section-hero .grid{
     align-items: center;
     gap: 3.0rem;
+
+    & .hero-subheading{
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        font-size: 1.2rem;
+        word-spacing: .1rem;
+        color: var(--hero-heading-color);
+        font-weight: 700;
+    }
+    & .hero-heading{
+        font-size: 3.8rem;
+        /* line-height: 1.5rem; */
+        font-family: "Jost";
+        color: var(--hero-heading-color);
+    }
+    & .hero-para{
+        color: var(--white-color);
+        margin: 1rem 0 3rem 0;
+    }
 }
 
 .section-hero-image img{
 width: 100%;
-/* height: auto; */
+height: 100vh;
 transform: scaleX(-1);
+padding: 10vw 0;
+}
+
+/* shape divider  */
+.custom-shape-divider-bottom-1700308273 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1700308273 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1700308273 .shape-fill {
+    fill: #FFFFFF;
 }
 
 /* end hero section  */
+
+/* start about section  */
+.section-about .grid{
+    gap:4rem;
+}
+.section-about img{
+    padding: 2.4rem;
+    margin: 5rem 1rem 1rem 1rem;
+    background-color: var(--supporting-color);
+    width: 11rem;
+    height: auto;
+    border-radius: 50%;
+    transition: all 0.5s linear;
+}
+
+.section-about .about-div{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.about-div .icon:hover>img{
+    transform: rotate(360deg);
+    background: linear-gradient(to right,#0575e6, #021b79);
+}
+/* end about section  */
+
+/* course section start */
+.section-course .grid{
+    text-align: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+.section-course .course-div{
+    padding-bottom: 2rem;
+}
+.section-course .course-div p{
+    padding: 0rem 1rem;
+}
+
+.section-course .course-div:hover{
+box-shadow: var(--btn-box-shadow);
+}
+
+/* course section end */
