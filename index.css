@@ -275,4 +275,41 @@ padding: 10vw 0;
 box-shadow: var(--btn-box-shadow);
 }
 
+.course-div:nth-child(1) .icon .fa-brands{
+    color: #c49eeb;
+    background-color: #e7d5f1;
+    
+}
+.course-div:nth-child(2) .icon .fa-brands{
+    color: #68bf9b;
+    background-color: #e7f6ef;
+    
+}
+.course-div:nth-child(3) .icon .fa-solid{
+    color: #ff8b52;
+    background-color: #fbebe8;
+    
+}
+.course-div:nth-child(4) .icon .fa-brands{
+    color: #183d3d;
+    background-color: #ccf7f7;
+    
+}
+.course-div:nth-child(5) .icon .fa-solid{
+    color: #D988B9;
+    background-color: rgb(247, 233, 238);
+    
+}
+.course-div:nth-child(6) .icon .fa-solid{
+    color: #FF9B50;
+    background-color: #f6dfce;
+    
+}
+.course-div:nth-child(7) .icon .fa-brands{
+    color: #1450A3;
+    background-color: #dce9fa;
+    
+}
+
+
 /* course section end */
