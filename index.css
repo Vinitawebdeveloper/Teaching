@@ -346,4 +346,14 @@ text-align: right;
     height: auto;
 
 }
+.choose-center-div, .video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.why-choose-div{
+    margin-top: 2rem;
+}
 /* end why choose section  */
