@@ -351,9 +351,22 @@ text-align: right;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* position: relative; */
 
 }
 .why-choose-div{
     margin-top: 2rem;
 }
+/* .choose-center-div .video{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--main-color);
+    width: 27rem;
+    height: 25rem;
+    border-radius:50% ;
+    z-index: -1;
+} */
 /* end why choose section  */
