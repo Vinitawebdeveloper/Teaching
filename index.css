@@ -313,3 +313,37 @@ box-shadow: var(--btn-box-shadow);
 
 
 /* course section end */
+
+/* start why choose section  */
+.section-why-choose .grid{
+gap:5rem;
+}
+
+.section-why-choose .text-align-right .why-choose-div{
+/* text-align: right; */
+display: flex;
+flex-direction: column;
+justify-content:start ;
+align-items: end;
+text-align: right;
+}
+.common-text-highlight{
+    width:3rem;
+    aspect-ratio:1;
+    background-color:var(--supporting-color);
+    color:var(--main-color);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:1.4rem;
+    font-weight:700;
+    border-radius:50%;
+}
+
+.choose-center-div video{
+    /* text-align: center; */
+    width: 90%;
+    height: auto;
+
+}
+/* end why choose section  */
