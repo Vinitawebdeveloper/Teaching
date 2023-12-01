@@ -356,6 +356,7 @@ text-align: right;
 }
 .why-choose-div{
     margin-top: 2rem;
+    margin-bottom: 7rem;
 }
 /* .choose-center-div .video{
     content: "";
@@ -370,3 +371,49 @@ text-align: right;
     z-index: -1;
 } */
 /* end why choose section  */
+
+ /* start contact home section  */
+ .section-contact-homepage{
+    border: 1px solid black;
+    padding-top: 8rem;
+    width: 70%;
+    min-height: 15rem;
+    margin: 0 auto;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;   
+    margin-bottom: 5rem; 
+    border-radius: 0.2rem;
+
+    & .grid{
+        align-items:center;
+    }
+ }
+
+ .contact-title{
+    font-size: 2rem;
+    line-height: 1;
+ }
+
+ .contact-content p{
+    margin: 1rem 0 2rem 0;
+ }
+
+ .section-contact-homepage img{
+    width: 100%;
+    height: auto;
+
+ }
+
+ .section-contact-homepage .btn {
+    width: 11rem;
+    height: 6rem;
+    text-align: center;
+}
+ .section-contact-homepage i.fa-solid.fa-arrow-circle-right {
+    padding: 0;
+}
+
+
+
+
+
+/* start contact home section  */ 
