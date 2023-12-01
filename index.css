@@ -37,7 +37,7 @@ a{
     --main-color:#0062ff;
     --supporting-color:#ebf3fe;
     --font-color:#424242;
-    --bg-color:#ffffff;
+    --bg-color:#f7fcff;
     --heading-color:#000a19;
     --para-color:#504e4d;
     --hero-heading-color:#003b99;
@@ -259,13 +259,17 @@ padding: 10vw 0;
 /* end about section  */
 
 /* course section start */
+.section-course {
+    background-color: var(--bg-color);
+    padding: 3rem 0 0 0;
+}
 .section-course .grid{
     text-align: center;
     gap: 2rem;
     padding: 2rem;
 }
 .section-course .course-div{
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 .section-course .course-div p{
     padding: 0rem 1rem;
@@ -375,7 +379,7 @@ text-align: right;
  /* start contact home section  */
  .section-contact-homepage{
     border: 1px solid black;
-    padding-top: 8rem;
+    padding: 5rem 0;
     width: 70%;
     min-height: 15rem;
     margin: 0 auto;
@@ -405,11 +409,29 @@ text-align: right;
 
  .section-contact-homepage .btn {
     width: 11rem;
-    height: 6rem;
-    text-align: center;
+    height: 4rem;
+   
 }
- .section-contact-homepage i.fa-solid.fa-arrow-circle-right {
+ /* .section-contact-homepage i.fa-solid.fa-arrow-circle-right {
+  color: var(--white-color);
     padding: 0;
+} */
+.section-contact-homepage a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white-color);
+    text-transform: capitalize;
+    /* border: 2px solid red; */
+}
+.section-contact-homepage a .fa-solid{
+    color: var(--white-color);
+    background-color: var(--main-color);
+    /* border: 2px solid red; */
+    padding: 0;
+    margin: 0;
+    /* width: 5px; */
 }
 
 
